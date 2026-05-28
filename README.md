@@ -1,5 +1,9 @@
 # Spotify Vibe Classifier & Recommendation System
 
+## Live Demo
+
+https://tracychanty-spotify-vibe.streamlit.app/
+
 ## Project Overview
 
 This project is an end-to-end music machine learning system built on Spotify track features. It combines unsupervised learning, supervised classification, and similarity-based recommendation inside a custom Streamlit web app, creating an interactive Spotify-inspired music discovery experience.
