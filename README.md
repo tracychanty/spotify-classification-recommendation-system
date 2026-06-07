@@ -9,13 +9,13 @@
 
 <br>
 
-### Home Page
+**Home Page**
 
 <img src="web_screenshots/home.png" width="900">
 
 <br><br>
 
-### Vibe Classification
+**Vibe Classification**
 
 <img src="web_screenshots/classification1.png" width="900">
 
@@ -29,7 +29,7 @@
 
 <br><br>
 
-### Music Recommendations
+**Music Recommendations**
 
 <img src="web_screenshots/recommendation1.png" width="900">
 
