@@ -9,11 +9,37 @@
 
 <br>
 
-![Home](images/home.png)
+### Home Page
 
-![Prediction](images/prediction.png)
+<img src="web_screenshots/home.png" width="900">
 
-![Recommendation](images/recommendation.png)
+<br><br>
+
+### Vibe Classification
+
+<img src="web_screenshots/classification1.png" width="900">
+
+<br><br>
+
+<img src="web_screenshots/classification2.png" width="900">
+
+<br><br>
+
+<img src="web_screenshots/classification3.png" width="900">
+
+<br><br>
+
+### Music Recommendations
+
+<img src="web_screenshots/recommendation1.png" width="900">
+
+<br><br>
+
+<img src="web_screenshots/recommendation2.png" width="900">
+
+<br><br>
+
+<img src="web_screenshots/recommendation3.png" width="900">
 
 </details>
 
