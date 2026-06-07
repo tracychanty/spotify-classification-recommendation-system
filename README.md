@@ -2,7 +2,20 @@
 
 ## Live Demo
 
-https://tracychanty-spotify-vibe.streamlit.app/
+[Launch Spotify Vibe App](https://tracychanty-spotify-vibe.streamlit.app/)
+
+<details>
+<summary>Dashboard Screenshots (Click to view)</summary>
+
+<br>
+
+![Home](images/home.png)
+
+![Prediction](images/prediction.png)
+
+![Recommendation](images/recommendation.png)
+
+</details>
 
 ## Project Overview
 
