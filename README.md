@@ -61,6 +61,62 @@ The pipeline works like this:
 5. Build a cosine-similarity recommendation engine for song matching
 6. Serve the system in a styled Streamlit interface
 
+## Key Results
+
+- Processed 114,000 Spotify tracks
+- Built 4 interpretable vibe segments using K-Means
+- Achieved 99.05% classification accuracy
+- Achieved 0.988 macro F1-score
+- Generated real-time music recommendations using cosine similarity
+- Deployed an interactive Streamlit web application
+
+## Project Architecture
+
+```
+Spotify Dataset
+      ↓
+Data Cleaning & Feature Engineering
+      ↓
+K-Means Clustering
+      ↓
+Vibe Labels
+      ↓
+Random Forest Classifier
+      ↓
+Artist Tool
+      ↓
+Vibe Prediction
+
+
+Spotify Dataset
+      ↓
+Feature Scaling
+      ↓
+Cosine Similarity
+      ↓
+Recommendation Engine
+      ↓
+Listener Tool
+      ↓
+Music Recommendations
+
+
+Both Pipelines
+      ↓
+Streamlit Web App
+```
+
+## Business Problem
+
+Spotify contains millions of tracks, making music discovery difficult for both listeners and independent artists.
+
+This project addresses two challenges:
+
+1. Helping listeners discover songs that match their musical preferences.
+2. Helping artists understand how their songs are perceived based on audio characteristics.
+
+The system combines clustering, classification, and recommendation techniques to create a personalized music discovery experience.
+
 ## Dataset
 
 Dataset source: Spotify Tracks Dataset from Kaggle 
@@ -73,6 +129,16 @@ Dataset source: Spotify Tracks Dataset from Kaggle
 - Unique albums: `46,589`
 - Null values after cleaning: `0`
 
+## Feature Engineering
+
+Several transformations were applied before modeling:
+
+- Removed missing and duplicate records
+- Converted duration from milliseconds to minutes
+- Standardized numerical audio features
+- Selected 11 audio features for clustering and classification
+- Exported recommendation-ready feature matrices for fast retrieval
+  
 ## Machine Learning Components
 
 ### Vibe Classification Model
@@ -127,6 +193,15 @@ Evaluation results:
 - Macro F1-score: `0.9883`
 - 5-fold CV macro F1 mean: `0.9871`
 - 5-fold CV macro F1 std: `0.0011`
+
+### Recommendation System Validation
+
+The recommendation engine was manually validated by testing
+multiple seed songs across genres and verifying that returned
+tracks exhibited similar audio characteristics and vibe profiles.
+
+Similarity retrieval is based on cosine similarity over a scaled
+audio-feature space.
 
 ## Web Appplication
 
@@ -185,6 +260,14 @@ The Streamlit app in [`web.py`](./web.py) provides two interfaces:
 - Streamlit
 - HTML/CSS
 
+## Future Improvements
+
+- Integrate Spotify API for live track retrieval
+- Support playlist-level vibe analysis
+- Replace cosine similarity with neural embedding models
+- Experiment with hybrid collaborative + content-based recommendations
+- Deploy with user authentication and personalized recommendation history
+  
 ## How to Run
 
 ### 1. Clone the repository
