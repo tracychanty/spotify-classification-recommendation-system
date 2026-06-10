@@ -43,6 +43,8 @@
 
 </details>
 
+---
+
 ## Project Overview
 
 This project is an end-to-end music machine learning system built on Spotify track features. It combines unsupervised learning, supervised classification, and similarity-based recommendation inside a custom Streamlit web app, creating an interactive Spotify-inspired music discovery experience.
@@ -61,6 +63,8 @@ The pipeline works like this:
 5. Build a cosine-similarity recommendation engine for song matching
 6. Serve the system in a styled Streamlit interface
 
+---
+
 ## Key Results
 
 - Processed 114,000 Spotify tracks
@@ -69,6 +73,8 @@ The pipeline works like this:
 - Achieved 0.988 macro F1-score
 - Generated real-time music recommendations using cosine similarity
 - Deployed an interactive Streamlit web application
+
+---
 
 ## Project Architecture
 
@@ -106,6 +112,8 @@ Both Pipelines
 Streamlit Web App
 ```
 
+---
+
 ## Business Problem
 
 Spotify contains millions of tracks, making music discovery difficult for both listeners and independent artists.
@@ -116,6 +124,8 @@ This project addresses two challenges:
 2. Helping artists understand how their songs are perceived based on audio characteristics.
 
 The system combines clustering, classification, and recommendation techniques to create a personalized music discovery experience.
+
+---
 
 ## Dataset
 
@@ -129,6 +139,8 @@ Dataset source: Spotify Tracks Dataset from Kaggle
 - Unique albums: `46,589`
 - Null values after cleaning: `0`
 
+---
+
 ## Feature Engineering
 
 Several transformations were applied before modeling:
@@ -138,6 +150,8 @@ Several transformations were applied before modeling:
 - Standardized numerical audio features
 - Selected 11 audio features for clustering and classification
 - Exported recommendation-ready feature matrices for fast retrieval
+
+---
   
 ## Machine Learning Components
 
@@ -176,6 +190,8 @@ Available filters in the app include:
 - result count selection
 - same-vibe vs diverse-vibe retrieval
 
+---
+
 ## Model Performance
 
 ### Clustering Quality
@@ -203,6 +219,8 @@ tracks exhibited similar audio characteristics and vibe profiles.
 Similarity retrieval is based on cosine similarity over a scaled
 audio-feature space.
 
+---
+
 ## Web Appplication
 
 The Streamlit app in [`web.py`](./web.py) provides two interfaces:
@@ -221,6 +239,7 @@ The Streamlit app in [`web.py`](./web.py) provides two interfaces:
 - genre and vibe filters
 - styled recommendation cards
 
+---
 
 ## Repository Structure
 
@@ -239,6 +258,8 @@ The Streamlit app in [`web.py`](./web.py) provides two interfaces:
 ├── requirements.txt 
 └── README.md
 ```
+
+---
 
 ## Technologies Used
 
@@ -260,6 +281,8 @@ The Streamlit app in [`web.py`](./web.py) provides two interfaces:
 - Streamlit
 - HTML/CSS
 
+---
+
 ## Future Improvements
 
 - Integrate Spotify API for live track retrieval
@@ -267,7 +290,9 @@ The Streamlit app in [`web.py`](./web.py) provides two interfaces:
 - Replace cosine similarity with neural embedding models
 - Experiment with hybrid collaborative + content-based recommendations
 - Deploy with user authentication and personalized recommendation history
-  
+
+---
+
 ## How to Run
 
 ### 1. Clone the repository
